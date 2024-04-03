@@ -7,6 +7,7 @@ export default function Header() {
 
 <>
         <Link to="/ListUser">CRUD persona</Link>
+        <Link to="/ListPlan">CRUD Planes</Link>
     </>
     </div>
 
