@@ -7,6 +7,8 @@ export default function Header() {
 
 <>
         <Link to="/ListUser">CRUD persona</Link>
+        <Link to="/ListLugar">CRUD Lugar</Link>
+        <Link to="/ListActividad">CRUD Actividad</Link>
     </>
     </div>
 

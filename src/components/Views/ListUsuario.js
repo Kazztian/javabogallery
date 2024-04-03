@@ -66,8 +66,7 @@ export const  ListUsuario = () => {
                                 <td>{usuario.primer_idioma}</td>
                                 <td>{usuario.segundo_idioma}</td>
                                 <td>
-                                    <button className="btn btn-primary mx-2">View</button>
-                                    <Link to={`/EditUser/${usuario.id}`} className="btn btn-outline-primary mx-2">Edit</Link>
+                                  <Link to={`/EditUser/${usuario.id}`} className="btn btn-outline-primary mx-2">Edit</Link>
                                     <button onClick={() => deleteUsuario(usuario.id)} className="btn btn-danger mx-2">Delete</button>
                                 </td>
                             </tr>
