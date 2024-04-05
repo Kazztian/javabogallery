@@ -27,22 +27,24 @@ export default function SignUp() {
 
   return (
     <div className='sign-up-container'>
-      <h1>Formulario de Registro</h1>
-      <form className='sign-up-form' onSubmit={handleSubmit}>
-        <div className='form-group'>
-          <label htmlFor="name">Nombre:</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
-        </div>
-        <div className='form-group'>
-          <label htmlFor="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
-        </div>
-        <div className='form-group'>
-          <label htmlFor="password">Contraseña:</label>
-          <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required />
-        </div>
-        <button type="submit" className='submit-btn'>Ingresar</button>
-      </form>
+      <h1>Login</h1>
+      <div className='sign-up-form-container'>
+        <form className='sign-up-form' onSubmit={handleSubmit}>
+          <div className='form-group'>
+            <label htmlFor="name">Nombre:</label>
+            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+          </div>
+          <div className='form-group'>
+            <label htmlFor="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+          </div>
+          <div className='form-group'>
+            <label htmlFor="password">Contraseña:</label>
+            <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required />
+          </div>
+          <button type="submit" className='submit-btn'>Ingresar</button>
+        </form>
+      </div>
     </div>
   );
 }
