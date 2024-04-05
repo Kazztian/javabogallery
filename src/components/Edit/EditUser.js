@@ -55,28 +55,31 @@ export const  EditUser = () => {
     <div className='row'>
         <div className='col-12'>
             <div className='formulario-registro'>
-                <h1>Editar Uusario</h1>
+            <div className="text-center">
+    <h1 className="bg-dark text-white">Editar Usuario</h1>
+</div>
+
                 <form onSubmit={(e) => onSubmit(e)}>
                  
                     
                     <div className='nombre_usu'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {nombre_usu} type={"text"} name="nombre_usu" placeholder="Ingrese el nombre" required></input>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {nombre_usu} type={"text"} name="nombre_usu" placeholder="Ingrese el nombre" required></input>
                     </div>
                     <br />
                     <div className='apellido_uso'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {apellido_uso} type={"text"} name="apellido_uso" placeholder="Ingrese el apellido" required></input>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {apellido_uso} type={"text"} name="apellido_uso" placeholder="Ingrese el apellido" required></input>
                     </div>
                     <br />
                     <div className='fecha_usu'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {fecha_usu} type={"date"} name="fecha_usu" placeholder="Ingrese la fecha" required></input>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {fecha_usu} type={"date"} name="fecha_usu" placeholder="Ingrese la fecha" required></input>
                     </div>
                     <br />
                     <div className='edad'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {edad} type={"number"} name="edad" placeholder="Ingrese la edad" required></input>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {edad} type={"number"} name="edad" placeholder="Ingrese la edad" required></input>
                     </div>
                     <br />
                     <div className='direccion_usu'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {direccion_usu} type={"text"} name="direccion_usu" placeholder="Ingrese la direccion" required></input>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {direccion_usu} type={"text"} name="direccion_usu" placeholder="Ingrese la direccion" required></input>
                     </div>
                     <br />
                     <div className="correo_usu">
@@ -92,15 +95,15 @@ export const  EditUser = () => {
                     </div>
                     <br />
                     <div className='genero_usu'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {genero_usu} type={"text"} name="genero_usu" placeholder="Ingrese su genero" required></input>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {genero_usu} type={"text"} name="genero_usu" placeholder="Ingrese su genero" required></input>
                     </div>
                     <br />
                     <div className='primer_idioma'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {primer_idioma} type={"text"} name="primer_idioma" placeholder="Ingrese su primer idioma" required></input>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {primer_idioma} type={"text"} name="primer_idioma" placeholder="Ingrese su primer idioma" required></input>
                     </div>
                     <br />
                     <div className='segundo_idioma'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {segundo_idioma} type={"text"} name="segundo_idioma" placeholder="Ingrese su segundo idioma" required></input>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {segundo_idioma} type={"text"} name="segundo_idioma" placeholder="Ingrese su segundo idioma" required></input>
                     </div>
                     <br />
 

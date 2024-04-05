@@ -31,9 +31,9 @@ export const  ListUsuario = () => {
                 <h2 className='text-center'>Lista de Usuarios</h2>
                 <Link to="/CreateUser" className='btn btn-primary'>Agregar usuario</Link>
 
-                <table className='table table-bordered table-striped'>
-                    <thead>
-                        <tr>
+                <table className='table table-bordered table-striped '>
+                    <thead >
+                        <tr >
                             <th>ID</th>
                             <th>NOMBRE</th>
                             <th>APELLIDO</th>

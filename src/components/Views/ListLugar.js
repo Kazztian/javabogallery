@@ -7,6 +7,7 @@ export const ListLugar  = () => {
     const [listLugar, setListLugar] = useState([]);
 
     useEffect(() =>{
+        getLugar();
 
     },[]);
 
@@ -50,13 +51,13 @@ export const ListLugar  = () => {
                 {listLugar.map((lugar, index) =>(
                     <tr key={index}>
                         <td>{lugar.id}</td>
-                        <td>{lugar.NombrerL}</td>
-                        <td>{lugar.LocalidadL}</td>
-                        <td>{lugar.BarrioL}</td>
-                        <td>{lugar.DireccionL}</td>
-                        <td>{lugar.TipoL}</td>
-                        <td>{lugar.DescripcionL}</td>
-                        <td>{lugar.Fecha_PublicacionL}</td>
+                        <td>{lugar.nombreL}</td>
+                        <td>{lugar.localidadL}</td>
+                        <td>{lugar.barrioL}</td>
+                        <td>{lugar.direccionL}</td>
+                        <td>{lugar.tipoL}</td>
+                        <td>{lugar.descripcionL}</td>
+                        <td>{lugar.fecha_PublicacionL}</td>
                         <td>{lugar.Id_usu}</td>
                         <td>
                                     

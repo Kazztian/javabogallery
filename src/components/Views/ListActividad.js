@@ -20,8 +20,8 @@ export const ListActividad = () => {
         });
     };
 
-    const deleteActividad = async (Id_actividades) =>{
-        await axios.delete(`http://localhost:8086/api/actividad/delete/${Id_actividades}`)
+    const deleteActividad = async (id) =>{
+        await axios.delete(`http://localhost:8086/api/actividad/delete/${id}`)
         getActividad()
     }
   return (
@@ -47,20 +47,20 @@ export const ListActividad = () => {
             <tbody>
                 {ListActividad.map((actividad, index) =>(
                     <tr key={index}>
-                        <td>{actividad.Id}</td>
-                        <td>{actividad.NombreACT}</td>
-                        <td>{actividad.DescripcionACT}</td>
-                        <td>{actividad.Fecha_inicioACT}</td>
-                        <td>{actividad.Fecha_finACT}</td>
-                        <td>{actividad.Jornada}</td>
-                        <td>{actividad.Valor}</td>
-                        <td>{actividad.URL_ACT}</td>
+                        <td>{actividad.id}</td>
+                        <td>{actividad.nombreACT}</td>
+                        <td>{actividad.descripcionACT}</td>
+                        <td>{actividad.fecha_inicioACT}</td>
+                        <td>{actividad.fecha_finACT}</td>
+                        <td>{actividad.jornada}</td>
+                        <td>{actividad.valor}</td>
+                        <td>{actividad.url_ACT}</td>
                         <td>{actividad.Id_lugar}</td>
 
                         <td>
                                     
-                                    <Link to={`/EditActividad/${actividad.Id}`} className="btn btn-outline-primary mx-2">Edit</Link>
-                                    <button onClick={() => deleteActividad(actividad.Id)} className="btn btn-danger mx-2">Delete</button>
+                                    <Link to={`/EditActividad/${actividad.id}`} className="btn btn-outline-primary mx-2">Edit</Link>
+                                    <button onClick={() => deleteActividad(actividad.id)} className="btn btn-danger mx-2">Delete</button>
                                 </td>
                     </tr>
                 ))}

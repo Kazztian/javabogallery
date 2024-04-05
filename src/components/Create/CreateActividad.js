@@ -8,70 +8,73 @@ export const  CreateActividad = () => {
 
     const [actividad,  setListActividad] = useState({
 
-        NombreACT: "",
-        DescripcionACT: "",
-        Fecha_inicioACT:"",
-        Fecha_finACT:"",
-        Jornada:"",
-        Valor:"",
-        URL_ACT:"",
+        nombreACT: "",
+        descripcionACT: "",
+        fecha_inicioACT:"",
+        fecha_finACT:"",
+        jornada:"",
+        valor:"",
+        url_act:"",
         Id_lugar:""
 
     })
-    const{NombreACT, DescripcionACT, Fecha_inicioACT,Fecha_finACT, Jornada, Valor, URL_ACT,Id_lugar } = actividad
+    const{nombreACT, descripcionACT, fecha_inicioACT,fecha_finACT, jornada, valor, url_act,Id_lugar } = actividad
 
     const onInputchange = (e) =>{
 
         setListActividad({...actividad ,[e.target.name]:e.target.value})
     };
 
-    const onSubmit = async (e) =>{
-
+    const onSubmit = async (e) => {
         e.preventDefault();
-        axios.put("http://localhost:8086/api/actividad/create", actividad)
-        navigate("ListActividad.js")
+        await axios.post("http://localhost:8086/api/actividad/create", actividad);
+        navigate("/ListActividad");
     };
+    
 
   return (
-    <div className='Container'>
+    <div className='container'>
         <div className='row'>
-            <div className='Formulario-registro'>
-            <h1>Editar Actividad</h1>
+        <div className='col-12'>
+            <div className='formulario-registro'>
+            <div className="text-center">
+    <h1 className="bg-dark text-white">crear actividad</h1>
+</div>
             <form onSubmit={(e) => onSubmit(e)}>
 
-            <div className='NombreACT'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {NombreACT} type={"text"} name="NombreACT" placeholder="Ingrese el nombre" required></input>
+            <div className='nombreACT'>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {nombreACT} type={"text"} name="nombreACT" placeholder="Ingrese el nombre" required></input>
                     </div>
                     <br />
 
-                    <div className='DescripcionACT'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {DescripcionACT} type={"text"} name="DescripcionACT" placeholder="Ingrese la descripcion" required></input>
+                    <div className='descripcionACT'>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {descripcionACT} type={"text"} name="descripcionACT" placeholder="Ingrese la descripcion" required></input>
                     </div>
                     <br />
 
-                    <div className='Fecha_inicioACT'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {Fecha_inicioACT} type={"date"} name="Fecha_inicioACT" placeholder="Ingrese la fecha" required></input>
+                    <div className='fecha_inicioACT'>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {fecha_inicioACT} type={"date"} name="fecha_inicioACT" placeholder="Ingrese la fecha" required></input>
                     </div>
                     <br />
 
-                    <div className='Fecha_finACT'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {Fecha_finACT} type={"date"} name="Fecha_finACT" placeholder="Ingrese la fecha final" required></input>
+                    <div className='fecha_finACT'>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {fecha_finACT} type={"date"} name="fecha_finACT" placeholder="Ingrese la fecha final" required></input>
                     </div>
                     <br />
 
-                    <div className='Jornada'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {Jornada} type={"text"} name="Jornada" placeholder="Ingrese la jornada" required></input>
+                    <div className='jornada'>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {jornada} type={"text"} name="jornada" placeholder="Ingrese la jornada" required></input>
                     </div>
                     <br />
 
 
-                    <div className='URL_ACT'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {URL_ACT} type={"text"} name="URL_ACT" placeholder="Ingrese la url" ></input>
+                    <div className='url_act'>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {url_act} type={"text"} name="url_act" placeholder="Ingrese la url" ></input>
                     </div>
                     <br />
 
-                    <div className='Valor'>
-                        <input className='fron-contol' onChange={(e) => onInputchange(e)} value = {Valor} type={"number"} name="Valor" placeholder="Ingrese la edad" required></input>
+                    <div className='valor'>
+                        <input className='form-control' onChange={(e) => onInputchange(e)} value = {valor} type={"number"} name="valor" placeholder="Ingrese el precio" required></input>
                     </div>
                     <br />
 
@@ -85,6 +88,7 @@ export const  CreateActividad = () => {
 
             </form>
             </div>
+        </div>
         </div>
     </div>
   )

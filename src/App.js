@@ -31,7 +31,7 @@ function App() {
           <Route path='/ListActividad' element={<ListActividad/>}/>
 
           <Route path="/EditUser/:id" element={<EditUser />} />
-          <Route path="/EditLugar/:id" element={<EditLugar />} />
+          <Route path="/EditLugar/:id_lugar" element={<EditLugar />} />
           <Route path='/EditActividad/:id' element={<EditActividad/>}/>
         </Routes>
       </div>
