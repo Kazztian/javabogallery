@@ -18,29 +18,29 @@ import ProductList from './pagesD/ProductList.js';
 
 
 
-import Header from './components/Header.js';
+
 import {CreateUser} from './components/Create/CreateUser.js';
 import { CreateLugar } from './components/Create/CreateLugar.js';
 import { CreateActividad } from './components/Create/CreateActividad.js';
+
 import {ListUsuario} from './components/Views/ListUsuario.js';
 import { ListLugar } from './components/Views/ListLugar.js';
 import { ListActividad} from './components/Views/ListActividad.js';
+
 import {EditUser} from './components/Edit/EditUser.js';
-<<<<<<< HEAD
 import { EditLugar } from './components/Edit/EditLugar.js';
 import { EditActividad } from './components/Edit/EditActividad.js';
 
-import Header from './components/Header.js';
-=======
+import {Header} from './components/Header.js';
+
+//import {CreatePlanes} from "./components/Create/CreatePlanes.js";
+//import {ListPlanes} from "./components/Views/ListPlanes.js";
+//import {EditPlanes} from "./components/Edit/EditPlanes.js";
+// <Route path="/CreatePlan" element={<CreatePlanes/>}/>
+//<Route path="/ListPlan" element={<ListPlanes/>}/>
+//<Route path="/EditPlan/:id_planes" element={<EditPlanes/>}/>
 
 
-import {CreatePlanes} from "./components/Create/CreatePlanes.js";
-import {ListPlanes} from "./components/Views/ListPlanes.js";
-import {EditPlanes} from "./components/Edit/EditPlanes.js";
-
->>>>>>> 6c1376355ca58c33cf553206c992c404063912df
-
-//
 
 
 function App() {
@@ -78,14 +78,12 @@ function App() {
           <Route path='/ListActividad' element={<ListActividad/>}/>
 
           <Route path="/EditUser/:id" element={<EditUser />} />
-<<<<<<< HEAD
+
           <Route path="/EditLugar/:id_lugar" element={<EditLugar />} />
           <Route path='/EditActividad/:id' element={<EditActividad/>}/>
-=======
-          <Route path="/CreatePlan" element={<CreatePlanes/>}/>
-          <Route path="/ListPlan" element={<ListPlanes/>}/>
-          <Route path="/EditPlan/:id_planes" element={<EditPlanes/>}/>
->>>>>>> 6c1376355ca58c33cf553206c992c404063912df
+
+         
+
         </Routes>
       </div>
     </>

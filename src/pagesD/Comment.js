@@ -1,11 +1,10 @@
 import React from 'react';
+import { Navigate } from 'react-router-dom';
 
 const Comment = () => {
-    return (
-        <div>
-            <h1>Comment page</h1>
-        </div>
-    );
+    
+        return <Navigate to="/ListLugar" replace />;
+
 };
 
 export default Comment;

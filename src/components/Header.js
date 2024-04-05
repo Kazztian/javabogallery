@@ -7,12 +7,11 @@ export default function Header() {
 <>
       
         <Link to="/ListUser">CRUD persona</Link>
-<<<<<<< HEAD
+
         <Link to="/ListLugar">CRUD Lugar</Link>
         <Link to="/ListActividad">CRUD Actividad</Link>
-=======
-        <Link to="/ListPlan">CRUD Planes</Link> 
->>>>>>> 6c1376355ca58c33cf553206c992c404063912df
+        {/* <Link to="/ListPlan">CRUD Planes</Link>  */}
+
     </>
     </div>
 
