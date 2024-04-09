@@ -29,13 +29,15 @@ export const CreateLugar = () => {
     };
 
     return (
-        <div className='container'>
-            <div className='row'>
-                <div className='col-12'>
-                    <div className='formulario-registro'>
-                    <div className="text-center">
-    <h1 className="bg-dark text-white">Crear Lugar</h1>
+        <div className='conteiner'>
+        <div className='row justify-content-center mt-5'>
+            <div className='col-md-6'>
+                <div className='card'>
+                    <div className='card-header bg-dark text-white text-center'>
+                    <h2 className="text-center bg-dark text-white p-3">Crear Lugares</h2>
+
 </div>
+<div className='card-body'>
                         <form onSubmit={onSubmit}>
                             <div className='nombreL'>
                                 <input className='form-control' onChange={onInputChange} value={nombreL} type="text" name="nombreL" placeholder="Ingrese el nombre" required />
@@ -84,6 +86,7 @@ export const CreateLugar = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

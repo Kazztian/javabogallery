@@ -27,10 +27,12 @@ export const ListUsuario = () => {
     };
 
     return (
-        <div className='container'>
-            <h2 className='text-center'>Lista de Usuarios</h2>
+        <div className='container-fluid'>
+             <div className='row justify-content-center'>
+          <div className='col-md-10'>
+            <h2 className='text-center bg-dark text-white p-3'>Lista de Usuarios</h2>
             <Link to="/CreateUser" className='btn btn-primary'>Agregar usuario</Link>
-            <table className='table table-bordered table-striped'>
+            <table className='table table-borered table-striped'>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -72,5 +74,8 @@ export const ListUsuario = () => {
                 </tbody>
             </table>
         </div>
+        </div>
+        </div>
+        
     );
 }

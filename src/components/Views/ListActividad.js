@@ -26,8 +26,10 @@ export const ListActividad = () => {
     }
   return (
     <>
-    <div className='container'>
-        <h2 className='text-center'>Lista de Actividades</h2>
+    <div className='conteiner-fluid'>
+    <div className='row justify-content-center'>
+          <div className='col-md-10'>
+        <h2 className='text-center bg-dark text-white p-3'>Lista de actividades</h2>
         <Link to="/CreateActividad" className='btn btn-primary'>Agregar Actividad</Link>
         <table className='table table-bordered table-striped'>
             <thead>
@@ -67,6 +69,8 @@ export const ListActividad = () => {
             </tbody>
         </table>
         
+    </div>
+    </div>
     </div>
     </>
   )

@@ -51,9 +51,9 @@ export const  EditUser = () => {
     }, [id]);
 
     return (
-        <div className='container'>
-    <div className='row'>
-        <div className='col-12'>
+        <div className='conteiner'>
+     <div className='row justify-content-center'>
+          <div className='col-md-10'>
             <div className='formulario-registro'>
             <div className="text-center">
     <h1 className="bg-dark text-white">Editar Usuario</h1>
@@ -117,5 +117,8 @@ export const  EditUser = () => {
         </div>
     </div>
     </div>
+
+
+
   )
 }

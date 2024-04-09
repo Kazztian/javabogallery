@@ -33,13 +33,14 @@ export const  CreateActividad = () => {
     
 
   return (
-    <div className='container'>
-        <div className='row'>
-        <div className='col-12'>
-            <div className='formulario-registro'>
-            <div className="text-center">
+    <div className='conteiner'>
+    <div className='row justify-content-center mt-5'>
+        <div className='col-md-6'>
+            <div className='card'>
+                <div className='card-header bg-dark text-white text-center'>
     <h1 className="bg-dark text-white">crear actividad</h1>
 </div>
+<div className='card-body'>
             <form onSubmit={(e) => onSubmit(e)}>
 
             <div className='nombreACT'>
@@ -83,13 +84,14 @@ export const  CreateActividad = () => {
             </div>
             <br /> 
                     <div className="form-check mb-3">
-            <button type="submit"> registrar Actividad</button>
+            <button type="submit"  className="btn btn-primary"> registrar Actividad</button>
             </div>
 
             </form>
             </div>
         </div>
         </div>
+    </div>
     </div>
   )
 }

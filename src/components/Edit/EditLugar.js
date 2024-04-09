@@ -38,12 +38,13 @@ export const EditLugar = () => {
     }, [id_lugar]);
 
     return (
-        <div className='container'>
-            <div className='row'>
-                <div className='col-12'>
+        <div className='conteiner-fluid'>
+             <div className='row justify-content-center'>
+          <div className='col-md-10'>
                     <div className='formulario-registro'>
                     <div className="text-center">
-    <h1 className="bg-dark text-white">Editar Lugar</h1>
+                    <h2 className="text-center bg-dark text-white p-3">Iditar Lugares</h2>
+
 </div>
                         <form onSubmit={(e) => onSubmit(e)}>
                             <div className='nombreL'>

@@ -28,16 +28,14 @@ export const CreateUser = () => {
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        try {
+        
             await axios.post("http://localhost:8086/api/usuario/create", usuario);
             navigate("/ListUsuario");
-        } catch (error) {
-            console.log(error);
-        }
+      
     };
 
     return (
-        <div className='container'>
+        <div className='conteiner'>
             <div className='row justify-content-center mt-5'>
                 <div className='col-md-6'>
                     <div className='card'>

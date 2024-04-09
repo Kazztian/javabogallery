@@ -28,24 +28,26 @@ export const ListLugar = () => {
         getLugar();
     };
      return (
-            <div className='conteiner'>
-                <h2 className='text-center'>Lista de lugares</h2>
-                <Link to="/CreateLugar" className='btn btn-primary'>Agregar Lugar</Link>
-                <table className='table table-bordered table-striped'>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>NOMBRE</th>
-                            <th>LOCALIDAD</th>
-                            <th>BARRIO</th>
-                            <th>DIRECCION</th>
-                            <th>TIPO</th>
-                            <th>DESCRIPCCION</th>
-                            <th>FECHA</th>
-
-                        </tr>
-
-                    </thead>
+        <div className='container-fluid'>
+        <div className='row justify-content-center'>
+          <div className='col-md-10'>
+            <h2 className="text-center bg-dark text-white py-3">Lista de lugares</h2>
+      
+            <Link to="/CreateLugar" className='btn btn-primary mb-3'>Agregar Lugar</Link>
+            
+            <table className='table table-bordered table-striped'>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>NOMBRE</th>
+                  <th>LOCALIDAD</th>
+                  <th>BARRIO</th>
+                  <th>DIRECCION</th>
+                  <th>TIPO</th>
+                  <th>DESCRIPCCION</th>
+                  <th>FECHA</th>
+                </tr>
+              </thead>
                     <tbody>
                         {listLugar.map((lugar, index) => (
                             <tr key={index}>
@@ -67,6 +69,9 @@ export const ListLugar = () => {
                     </tbody>
                 </table>
             </div>
+            </div>
+            </div>
+    
     
     );
 }
