@@ -31,14 +31,8 @@ import {EditUser} from './components/Edit/EditUser.js';
 import { EditLugar } from './components/Edit/EditLugar.js';
 import { EditActividad } from './components/Edit/EditActividad.js';
 
-import {Header} from './components/Header.js';
+ 
 
-//import {CreatePlanes} from "./components/Create/CreatePlanes.js";
-//import {ListPlanes} from "./components/Views/ListPlanes.js";
-//import {EditPlanes} from "./components/Edit/EditPlanes.js";
-// <Route path="/CreatePlan" element={<CreatePlanes/>}/>
-//<Route path="/ListPlan" element={<ListPlanes/>}/>
-//<Route path="/EditPlan/:id_planes" element={<EditPlanes/>}/>
 
 
 
@@ -56,7 +50,7 @@ function App() {
           <Route path="/sign-up" element={<SignUp />} />
 
 
-          <Route path="/" element={<Sidebar />} />
+         
           <Route path="" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
